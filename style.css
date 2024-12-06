@@ -1,0 +1,87 @@
+.container {
+    max-width: 100%;
+    justify-content: center;
+    display: grid;
+    height: 120vh;
+    grid-template-rows:1fr 1fr 5fr 0.5fr;
+    gap: 80px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px 20px 0px 20px;
+}
+nav {
+    background-color: rgb(0, 255, 170);
+    padding: 10px;
+}
+nav a{
+    margin-left: 90px;
+    font-weight: 600px;
+    font-size: 20px;
+    color: rgb(0, 32, 22);
+}
+nav a:hover{
+    color: #FFF;
+}
+
+.active {
+    color: #FFF;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+input {
+    border: none;
+}
+
+
+.card .row {
+    max-width: 400px;
+    max-height: 60px;
+    margin-left: 30px;
+}
+
+#home-footer {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    padding: 10px 0 10px 10px;
+    height: 13vh;
+}
+
+#room-card {
+    align-items: flex-start;
+    padding: 10px;
+    height: 50vh;
+    width: 51.3vh;
+}
+
+#booking-button {
+    border-radius: 5px;
+    width: 10vh;
+    font-weight: 600px;
+    font-size: large;
+    color: #FFF;
+    background-color: rgb(0, 41, 27);
+    margin-left: 20vh;
+}
+
+#about-row {
+    width: 110vh ;
+    height: auto;
+}
+
+#about-button {
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: large;
+    color:rgb(9, 105, 0);
+    background-color: rgb(192, 253, 164);
+    border: none;
+    font-stretch: expanded;
+}
