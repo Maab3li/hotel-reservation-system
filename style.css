@@ -1,17 +1,40 @@
 .container {
-    max-width: 100%;
-    justify-content: center;
+    
+
+    
+    
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+#body {
     display: grid;
-    height: 120vh;
     grid-template-rows:1fr 1fr 5fr 0.5fr;
+    grid-template-columns: 5fr;
     gap: 80px;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    justify-content: center;
     margin: 10px 20px 0px 20px;
+    max-height: 120vh;
+    max-width: 200vh;
+    background-color: rgb(191, 255, 234);
 }
+
+#home-p1 {
+    text-align: center;
+    font-family: monospace;
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#home-p2 {
+    text-align: center;
+    max-width: 70vh;
+    background-color: rgb(252, 252, 137);
+}
+
 nav {
-    background-color: rgb(0, 255, 170);
     padding: 10px;
 }
 nav a{
@@ -30,11 +53,12 @@ nav a:hover{
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 800px;
+    max-width: 600px;
     min-height: 40px;
     align-items: center;
     justify-content: center;
     margin-top: -30px;
+    margin-left: 360px;
 }
 input {
     border: none;
@@ -49,16 +73,31 @@ input {
 
 #home-footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 800px;
+    max-width: 700px;
     padding: 10px 0 10px 10px;
     height: 13vh;
+    color:rgb(0, 56, 37);
 }
 
 #room-card {
-    align-items: flex-start;
-    padding: 10px;
-    height: 50vh;
-    width: 51.3vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px 40px 10px 0px;
+    height: 60vh;
+    width: 53vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+}
+#room-card img {
+    width: 50vh ;
+    height: 30vh ;
+    align-items: center;
+    padding: 10px 20px 10px 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#room-card p {
+    margin-left: 60px;
 }
 
 #booking-button {
@@ -68,7 +107,8 @@ input {
     font-size: large;
     color: #FFF;
     background-color: rgb(0, 41, 27);
-    margin-left: 20vh;
+    margin-left: 23vh;
+    margin-bottom: 20px;
 }
 
 #about-row {
@@ -80,8 +120,8 @@ input {
     border-radius: 5px;
     font-weight: 700;
     font-size: large;
-    color:rgb(9, 105, 0);
-    background-color: rgb(192, 253, 164);
+    color:rgb(8, 44, 5);
+    background-color: rgb(100, 255, 28);
     border: none;
     font-stretch: expanded;
 }
