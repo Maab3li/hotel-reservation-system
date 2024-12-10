@@ -655,7 +655,7 @@
     padding-bottom: 65px;
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 600px) {
     .card-4 .card-body {
       padding: 50px 40px;
     }

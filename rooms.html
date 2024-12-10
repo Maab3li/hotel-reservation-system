@@ -10,22 +10,40 @@
 <body id="body">
     <div class="page-wrapper">
         <div class="wrapper wrapper--w960">
-    <div class="row" id="nav">
-            <a href="index.html" rel="home page">Home</a>
-            <a href="rooms.html" rel="rooms page" class="active">Rooms</a>
-            <a href="register.html" rel="registeration page">Register</a>
-            <a href="login.html" rel="login page">Login</a>
-            <a href="about.html" rel="about page">About</a>
-            <a href="rate.html" rel="rating page">Rate us</a>
-    </div>
+            <div class="grid-container">
+            <nav class="navbar navbar-expand-lg navbar-light header "> 
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rate.html">Rate us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="main">
         <div class="row" id="cards-row">
-            <div class="col">
+            <div class="col"  id="room-card-col">
                 <div id="room-card">
                     <div class="col">
-                        <img src="images/bed-with-desk-headboard-131216-1042-11-768x1046.jpg" alt="room image">
-                        <p>Features :</p>
-                        <p>Facilities :</p>
-                        <p>Guests :</p>
+                        <img src="images/bed-with-desk-headboard-131216-1042-11-768x1046.jpg" alt="room image" id="room-card-img">
+                        <p>Features : outer room</p>
+                        <p>Facilities : room heater - TV - inner bathroom</p>
+                        <p>Guests : 2</p>
                         <a href="book.html">
                             <button type="button" id="booking-button">
                                 Book
@@ -34,23 +52,24 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col"  id="room-card-col">
                 <div id="room-card">
                     <div class="col">
-                            <img src="images/wrap-around-headboard-131216-1027-02-768x524.jpg" alt="room image">
-                            <p>Features :</p>
-                            <p>Facilities :</p>
-                            <p>Guests :</p>
-                            <a href="book.html">
-                                <button type="button" id="booking-button">
-                                    Book
-                                </button>
-                            </a>
-                        </div>
+                        <img src="images/wrap-around-headboard-131216-1027-02-768x524.jpg" alt="room image" id="room-card-img">
+                        <p>Features : outer room</p>
+                        <p>Facilities : room heater - TV - inner bathroom</p>
+                        <p>Guests : 2</p>
+                        <a href="book.html">
+                            <button type="button" id="booking-button">
+                                Book
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
-    <footer id="home-footer" >
+        </div>
+    </div>
+    <div class="footer" >
         <div class="row">
             <div class="col">
                 <p>Contact us :</p>
@@ -63,7 +82,8 @@
                 <p></p>
             </div>
         </div>
-    </footer>
+    </div>
+</div>
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

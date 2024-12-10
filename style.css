@@ -1,10 +1,23 @@
-.container {
-   min-height: 150vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: .5fr 3fr .5fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "main main main"
+  ". . ."
+  ". footer ." ;
 }
 
-
+.header {
+    grid-area: header;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
 
 #home-p2-row {
     width: 700px;
@@ -18,7 +31,8 @@
 
 #home-p1 {
     text-align: center;
-    font-family: monospace;
+    font-family: "Dancing Script", monospace;
+    font-weight: 700;
     letter-spacing: 5px;
     font-size: 40px;
     font-weight: 600;
@@ -48,19 +62,20 @@
 
 nav {
     padding: 10px;
-    max-width: 70%;
+    max-width: 100%;
     margin-top: 2%;
     margin-left: 20%;
     font-weight: 500;
+    ;
 }
-.navbar-collapse .navbar-nav .nav-item .nav-link{
+.header .navbar-collapse .navbar-nav .nav-item .nav-link{
     margin: .3em;
     font-weight: 500px;
     font-size: 1.5em;
     color: rgb(0, 32, 22);
     display: inline-flex;
 }
-.navbar-collapse .navbar-nav .nav-item:hover{
+.header .navbar-collapse .navbar-nav .nav-item:hover{
     color: #FFF;
 }
 
@@ -83,8 +98,6 @@ nav {
     align-items: center;
     justify-content: center;
     margin-left: 25%;
-    
-    
 }
 
 input {
@@ -92,16 +105,15 @@ input {
 }
 
 
-#home-footer {
+.footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 500px;
+    width: 500px;
+    height: fit-content;
     padding: 10px 0 10px 10px;
-   
     color:rgb(0, 56, 37);
     background-color:aquamarine;
-    margin-top: 7%;
     align-items: initial;
-    margin-left: 25%;
+    
 }
 
 #home-footer .col:nth-child(2) {
@@ -148,7 +160,6 @@ input {
 
 #room-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   
     max-width: 305px;
     align-items: center;
     justify-content: center;
@@ -176,7 +187,7 @@ input {
 
 #booking-button {
     border-radius: 5px;
-    width: 20%;
+    width: fit-content;
     font-weight: 600px;
     font-size: large;
     color: #FFF;
@@ -184,23 +195,33 @@ input {
     margin-bottom: 4%;
     margin-left: 35%;
 }
-
+/*
 #about-row {
     display:-moz-grid-group;
     grid-template-rows: 2fr;
     grid-template-columns: 3fr 3fr;
 }
-
+*/
 #about-img {
     max-width: 140%;
     min-height: 100%;
+    align-items: flex-start;
  }
- 
+
+ #about {
+    margin-left: 20%;
+    margin-top: 5%;
+ }
+
+ #about-nav {
+    margin-left: 40%;
+ }
+ /*
  #about-row {
      margin-left: 20%;
      margin-top: 5%;
  }
- 
+ */
  #about-row .col:nth-child(2) {
      margin-left: 15%;
      max-width: 50%;
@@ -218,12 +239,56 @@ input {
     margin-left: 0%;
 }
 
+.rate-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+#rate-h2 {
+    text-align: center;
+    color: rgb(0, 65, 43);
+}
+
+#rate-range {
+    margin-left: 30%;
+    width: 25em;
+    margin-top: 3%;
+}
+
+.textarea-field {
+    min-width: 25em;
+    margin-left: 30%;
+}
+
+#rate-button {
+    margin-top: 3%;
+    border-radius: 5px;
+    width: 20%;
+    font-weight: 600px;
+    font-size: large;
+    color: #FFF;
+    background-color: rgb(0, 41, 27);
+    margin-left: 40%;
+}
+
+.pos-f-t {
+    display: none;
+}
+
 @media(max-width:600px){
     #body {
        display: inline-flex;
        flex-direction: column;
        justify-content: center;
        width: 600px;
+    }
+
+    nav .header {
+        float: none;
     }
 
     nav {
@@ -233,14 +298,21 @@ input {
     justify-content: flex-start;
     }
 
-    nav a {
-        justify-content: center;
-        font-size: .7em;
-        
+    .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-size: .3em;
+        display: inline-flex;
     }
+
+    .dancing-script-font {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
 
     #home-p1 {
         margin-top: 2%;
+    
     }
 
     #home-p2 {
@@ -248,11 +320,13 @@ input {
         justify-content: center;
         font-size: .7em;
         margin-left: 0;
+        min-width: 600px;
     }
 
     #home-p2-row {
         font-size: .7em;
         margin-left: 0;
+        min-width: 600px;
     }
 
     #img-row {
@@ -264,9 +338,32 @@ input {
         font-size: .7em;
     }
 
-    #home-footer {
+    .footer {
         margin-left: 0;
         font-size: .7em;
     }
+    .page-wrapper {
+        min-width: 600px;
+    }
+
+    .pos-f-t {
+        display:inline-flex;
+    }
     
+    #room-card {
+        width: 200px;
+        font-size: .7em;
+    }
+
+    #room-card-img {
+        width: 200px;
+        height: 150px;
+    }
+
+    #booking-button {
+        width: 4em;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
 }
