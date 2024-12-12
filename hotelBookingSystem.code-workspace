@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "hotel-api",
+			"path": "hotel-api"
+		}
+	],
+	"settings": {}
+}
