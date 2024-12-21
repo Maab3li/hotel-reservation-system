@@ -18,7 +18,7 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title">Registration</h2>
-                    <form method="POST" action="" id="myForm">
+                    <form method="POST" action="" id="registrationForm">
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
@@ -37,19 +37,22 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Password</label>
-                                    <input class="input--style-4" type="password" name="password" required>
+                                    <input class="input--style-4" type="password" id="password" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Repeat password</label>
-                                    <input class="input--style-4" type="password" name="repeat-password" required>
+                                    <input class="input--style-4" type="password" id="repeat-password" required>
                                 </div>
                             </div>
                         </div>
+                        <div class="row-space">
+                            <div id="passwordMismatchError" class="error-message" style="display: none;"></div>
+                        </div><br>
                         <div class="row row-space" >
                             <a href="login.html">
-                                <button id="submit-btn" class="btn btn--radius-2 btn--blue" type="submit">Register</button>
+                                <button id="submit-btn" class="btn btn--radius-2 btn--blue" type="submit" onclick="return validatePasswords()">Register</button>
                             </a>
                         </div>
                         <hr>

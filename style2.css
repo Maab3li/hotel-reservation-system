@@ -314,6 +314,16 @@
     background: rgb(143, 252, 206);
   }
   
+  .error-message {
+    background-color: rgb(245, 58, 58);
+    color: #FFF;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 700;
+    min-height: 40px;
+}
+
   /* ==========================================================================
      #DATE PICKER
      ========================================================================== */
